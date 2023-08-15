@@ -1,0 +1,68 @@
+<html>
+<head>
+  
+<style>
+  .form-container {
+    display: flex;
+    margin: 10px;
+  }
+
+  .form-row {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+  }
+
+  .form-label {
+    width: 250px;
+    height: 35px;
+    display: flex;
+    align-items: center;
+  }
+
+  .form-input {
+    height: 30px;
+    width: 75px;
+  }
+
+  .form-buttons {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+  }
+
+  .form-button {
+    margin-bottom: 10px;
+    padding: 5px;
+    width: 100px;
+  }
+</style>
+</head>
+<body>
+  <div class="form-container">
+    <div class="form-column">
+      <div class="form-row">
+        <div class="form-label">Matrícula:</div>
+        <input type="text" class="form-input" id="txtMatricula">
+      </div>
+      
+      <div class="form-row">
+        <div class="form-label">Nome:</div>
+        <input type="text" class="form-input" id="txtNome">
+      </div>
+      
+      <div class="form-row">
+        <div class="form-label">Email:</div>
+        <input type="text" class="form-input" id="txtEmail">
+      </div>
+    </div>
+    
+    <div class="form-buttons">
+      <button class="form-button">Salvar</button>
+      <button class="form-button">Editar</button>
+      <button class="form-button">Excluir</button>
+      <button class="form-button">Limpar</button>
+    </div>
+  </div>
+</body>
+</html>
