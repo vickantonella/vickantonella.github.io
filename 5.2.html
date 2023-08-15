@@ -1,7 +1,14 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
+
+  body{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 14;
+  }
   .form-container {
     display: flex;
     margin: 10px;
@@ -39,6 +46,7 @@
 </style>
 </head>
 <body>
+  <form>
   <div class="form-container">
     <div class="form-column">
       <div class="form-row">
@@ -53,7 +61,7 @@
       
       <div class="form-row">
         <div class="form-label">Email:</div>
-        <input type="text" class="form-input" id="txtEmail">
+        <input type="email" class="form-input" id="txtEmail">
       </div>
     </div>
     
@@ -64,5 +72,6 @@
       <button class="form-button">Limpar</button>
     </div>
   </div>
+</form>
 </body>
 </html>
