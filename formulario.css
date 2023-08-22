@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: aquamarine;
+    margin-left: 30%;
+    margin-right: 30%;
+}
+
+h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+h5 {
+    font-size: 10px;
+}
+
+.container {
+    padding: 15px;
+    background-color: white;
+}
+
+.question {
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.question label {
+    text-align: center;
+    margin-right: 5px;
+}
+

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel = "stylesheet" href="formulario.css"/>
+<title>Form</title>
+</head>
+<body>
+   <form>
+    <header>
+      <h1>Survey Form</h1>
+    </header>
+  <div class="container">
+    <h5>Let us know how we can improve freeCodeCamp</h5>
+    <div class="question">
+        <label for="name">*Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </div>
+    <br>
+    <div class="question">
+        <label for="email">*Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your Email" required>
+    </div>
+    <br>
+    <div class="question">
+        <label for="age">*Age:</label>
+        <input type="number" id="age" name="age" placeholder="Age" required>
+    </div>
+    <br>
+    <div class="question">
+        <label for="role">Which option best describes your current role?</label>
+        <select id="role" name="role">
+            <option value="student">Student</option>
+        </select>
+    </div>
+    <br>
+    <div class="question">
+        <label for="recommend">*How likely is it that you would recommend freeCodeCamp to a friend?</label>
+        <input type="radio" id="definitely" name="recommend" value="definitely" required>
+        <label for="definitely">Definitely</label>
+        <input type="radio" id="maybe" name="recommend" value="maybe" required>
+        <label for="maybe">Maybe</label>
+        <input type="radio" id="not-sure" name="recommend" value="not-sure" required>
+        <label for="not-sure">Not sure</label>
+    </div>
+    <br>
+    <div class="question">
+        <label for="like">What do you like most in FCC:</label>
+        <select id="like" name="like">
+            <option value="select-option">Select an option</option>
+        </select>
+    </div>
+    <br>
+    <div class="question">
+        <label>Things that should be improved in the future (Check all that apply):</label>
+        <input type="checkbox" id="front-end-projects" name="progress" value="Front-end Projects">
+        <label for="front-end-projects">Front-end Projects</label>
+        <input type="checkbox" id="back-end-projects" name="progress" value="Back-end Projects">
+        <label for="back-end-projects">Back-end Projects</label>
+        <input type="checkbox" id="data-visualization" name="progress" value="Data Visualization">
+        <label for="data-visualization">Data Visualization</label>
+    </div>
+  </div>
+</form>
+</body>
+</html>
