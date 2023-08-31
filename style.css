@@ -56,9 +56,9 @@ a:hover {
 }
 
 .icone-rede {
-    width: 30px; /* Ajuste o tamanho dos ícones conforme necessário */
+    width: 30px;
     height: 30px;
-    display: inline-block; /* Exibir os ícones em linha */
+    display: inline-block; 
     margin-right: 10px;
 }
 
