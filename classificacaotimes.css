@@ -1,0 +1,28 @@
+body{
+    font-size: 12px;
+    display: flex;
+    background-color:white;
+}
+
+.linha{
+    display: grid;
+    grid-template-columns: 20px 10vw repeat(9, 50px);
+    border-bottom: 1px gray solid;
+}
+
+.topo {
+    background-color: rgba(136, 131, 131, 0.11);
+    color: black;
+}
+
+.container{ 
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+
+.container.img img{
+    width: 20px;
+}

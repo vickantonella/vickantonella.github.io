@@ -1,0 +1,83 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-image: linear-gradient(to left, rgb(95, 0, 158) 50%, white 50%);
+}
+
+header {
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    top: 0;
+    width: 100vw;
+}
+header div {
+    display: flex;
+    align-items: center;
+}
+
+.meu-nome {
+    color: rgb(95, 0, 158);
+}
+
+header a {
+    margin: 0 10px;
+}
+
+header img {
+    width: 2rem;
+    margin: 0 20px;
+}
+
+p {
+    margin: 5px 10px;
+}
+
+a {
+    text-decoration: none;
+    width: 30px;
+    padding: 0px 5px 0px 5px;
+    color : #fff
+}
+
+a:hover {
+    text-decoration-line: underline;
+}
+
+.centralizado {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.icone-rede {
+    width: 30px; /* Ajuste o tamanho dos ícones conforme necessário */
+    height: 30px;
+    display: inline-block; /* Exibir os ícones em linha */
+    margin-right: 10px;
+}
+
+img {
+    border-radius: 80%;
+    height: 200px;
+    width: 160px;
+    margin-bottom: 10px;
+}
+
+.altera-cor {
+    background: linear-gradient(to left, white 50%, rgb(95, 0, 158) 50%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.icone-rede {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
