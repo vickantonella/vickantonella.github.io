@@ -1,0 +1,55 @@
+body{
+    background-color: rgba(128, 0, 128, 0.425);
+    font-family: Georgia, 'Times New Roman', Times, serif
+}
+
+ .secondary{
+    display: flex;
+    margin: 10px 0;
+    padding: 0 5px;
+}
+
+.projects{
+    margin: 10px;
+    width: 50%;
+    height: 35%;
+    font-size: 9px;
+    color: white;
+    background-color: rgba(83, 6, 83, 0.767);
+    border: 1px  solid  black;
+    border-radius: 1;
+    cursor: pointer ;
+}
+
+p{
+    text-align: justify;
+}
+
+#main a{
+    padding: 5px;
+    margin: 5px;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#main p{
+    margin: 10px;
+    font-size: 12px;
+}
+
+.name-project:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.information{
+    font-size: 10px;
+    text-align: right;
+}
+
+#rodape{
+    text-align: center;
+    color: purple;
+}
+
