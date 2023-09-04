@@ -1,11 +1,8 @@
-html{
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: gray;
-}
-
 header{
     background-color: green;
+    width: 1400px;
     color: white;
+    text-align: center;
 }
 
 body{
@@ -14,7 +11,9 @@ body{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: white;
+    background-color: rgba(30, 5, 94, 0.959);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: gray;
 }
 
 main{
@@ -28,29 +27,31 @@ main{
     width: 100%;
     height: 100%;
     display: grid;
-    grid-gap: 20px;
+    grid-gap: 20px; 
+   ;
+}
+
+.conteiner:hover{
+    background-color: rgba(0, 128, 0, 0.612);
 }
 
 div{
-    outline: solid 2px #0dcf0d8f;
+    outline: solid 2px white;
     border-radius: 10px;
     cursor: pointer;
+    transition: transform 1s, z-index 5s;
+    font-weight: bolder;
 }
 
 div:hover{
-    text-decoration: underline;
+    text-decoration: underline; 
+    transform: scale(1.2);
 }
 
-header{
-    text-align: center;
-    width: 100%;
-    height: 10vh;
-    position: flex;
-    vertical-align: bottom;
-}
 
 .news-1{
     grid-area: 1 / 1 / 2 / 2;
+    
 }
 .news-2{
     grid-area: 1 / 2 / 2 / 5; 
@@ -64,4 +65,3 @@ header{
 .news-5{
     grid-area: 2 / 1 / 2 / 1;
 }
-
