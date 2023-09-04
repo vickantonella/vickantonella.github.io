@@ -4,6 +4,10 @@ body{
     background-color:white;
 }
 
+h1 {
+    text-align: center;
+}
+
 .linha{
     display: grid;
     grid-template-columns: 20px 10vw repeat(9, 50px);
