@@ -1,2 +1,2 @@
 # my-curriculum
-Primeiro projeto da disciplina de pweb
+Projetos da disciplina de PWEB
