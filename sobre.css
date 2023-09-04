@@ -1,0 +1,36 @@
+body{
+    margin: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(128, 0, 128, 0.425);
+}
+
+h1{
+    font-size: 25px;
+}
+h2{
+    text-align: center;
+    text-decoration: underline;
+}
+.exp-txt{
+    display: inline-flex;
+    justify-content: space-between;
+}
+.curriculo-titulos{
+    width: 10%;
+    padding-right: 1%;
+}
+p{
+    width: 100%;
+}
+.titulo{
+    font-weight: 200;
+}
+
+label{
+    font-size: 50px;
+}
+
+h3{
+    margin: 10px;
+    padding: 5px;
+}
