@@ -9,7 +9,7 @@ header {
 }
 
 #container-geral {
-    height: 90%;
+    height: 40%;
     gap: 20px;
     display: flex;
     justify-content: center;
