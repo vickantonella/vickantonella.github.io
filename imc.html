@@ -5,11 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora do IMC</title>
+    <title>Cálculo do IMC</title>
     <link rel="stylesheet" href="imc.css">
 </head>
 
 <body>  
+    <div class="titulo"> 
+            <h1>Cálculo do IMC</h1>
+    </div>
     <form class="input-geral" onsubmit="mostrarCard(); return false;">
         <div class="classe-input-nome"> 
             <label for="exemplo-nome" class="form-label">
@@ -33,16 +36,15 @@
         </div>
         <div class="d-flex justify-content-end">
               <br>
-              <button type="submit" class="primeiro-button" id="calculo">Calcular IMC</button>
+              <button type="submit" class="button" id="calculo">Calcular IMC</button>
         </div>
     </form>
     <section id="card-teste" style="display: none;">
         <div class="card">
             <div class="card-body">
-                <h5 class="card-title">Detalhes</h5>
+                <h5 class="card-title">Detalhes:</h5>
                 <h6 class="card-subtitle"></h6>
                 <p class="card-text"></p>
-                <a href="https://www.calculoimc.com.br/tabela-de-imc/" class="card-link">Verifique seu status (média social)</a>
             </div>
         </div>
     </section>
