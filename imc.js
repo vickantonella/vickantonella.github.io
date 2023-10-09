@@ -23,13 +23,17 @@ function atualizarCard() {
     card.innerHTML = `
     <div class="card">
         <div class="card-body">
-            <h5 class="card-title">Detalhes</h5>
-            <h6 class="card-subtitle> Olá, ${nome.value}.</h6>
+            <h3 class="card-title">Detalhes:</h3>
+            <h3 class="card-subtitle> Olá, ${nome.value}.</h3>
             <p class="card-text">O seu IMC é de: ${imc.toFixed(2)}</p>
-            <a href="https://www.calculoimc.com.br/tabela-de-imc/" class="card-link">Verifique seu status (média social)</a>
         </div>
     </div>
     `;
+}
+
+function calcularIMC(peso_calc, altura_calc) {
+    const imc = peso_calc / (altura_calc ** 2);
+    return imc;
 }
 
 function calcularIMC(peso_calc, altura_calc) {
