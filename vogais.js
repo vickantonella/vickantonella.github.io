@@ -9,5 +9,5 @@ function contarVogais() {
       }
     }
 
-    document.getElementById('resultado').textContent = `Número de vogais: ${contador}`;
+    document.getElementById('resultado').textContent = `Número de vogais na string: ${contador}`;
   }
