@@ -1,6 +1,12 @@
 function contarVogais() {
     const inputString = document.getElementById('inputString').value;
-    const vogais = 'aeiou';
+    const vogais = [
+    "a", "á", "à", "ã", "â",
+    "e", "é", "è", "ê",
+    "i", "í", "ì", "î",
+    "o", "ó", "ò", "õ", "ô",
+    "u", "ú", "ù", "û",
+];
     let contador = 0;
 
     for (let i = 0; i < inputString.length; i++) {
