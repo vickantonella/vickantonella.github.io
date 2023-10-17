@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário - Escola Virtual</title>
+    <link rel="stylesheet" href="formularioescolar.css">
+</head>
+<body>
+    <header>
+        <h1>Escola Virtual</h1>
+        <h2>Formulário de Pré-Matrícula</h2>
+        <hr>
+    </header>
+
+    <form action="#" id="form">
+        <fieldset>
+            <legend>Dados Pessoais:</legend>
+            <div>
+                <label for="nome-aluno">Nome do Aluno:</label>
+                <input type="text" id="nome-aluno" required>
+            </div>
+            <div>
+                <label for="nascimento-aluno">Nascimento:</label>
+                <input type="date" id="nascimento-aluno" required>
+            </div>
+            <div>
+                <label for="nome-mae">Nome da Mãe:</label>
+                <input type="text" id="nome-mae" required>
+            </div>
+            <div>
+                <label for="nome-pai">Nome do Pai:</label>
+                <input type="text" id="nome-pai" required>
+            </div>
+            <div>
+                <label for="ddd">Telefone (DDD):</label>
+                <input type="number" id="ddd" required>
+                <label for="telefone">Tel:</label>
+                <input type="number" id="telefone" required>
+                <label for="ramal">Ramal:</label>
+                <input type="number" id="ramal" required>
+            </div>
+            <div>
+                <label for="email">E-Mail:</label>
+                <input type="email" id="email" required>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Informações de Matrícula:</legend>
+            <div class="informacoes">
+                <label for="serie">Série:</label>
+                <select id="serie">
+                    <option>Pré-escolar</option>
+                    <option>Ensino Fundamental I</option>
+                    <option>Ensino Fundamental II</option>
+                    <option>1ª série do Ensino Médio</option>
+                    <option>2ª série do Ensino Médio</option>
+                    <option>3ª série do Ensino Médio</option>
+                </select>
+            </div>
+            <div class="turno">
+                <label>Turno:</label>
+                <input type="radio" name="turno" id="turno-manha" required>
+                <label for="turno-manha">Manhã</label>
+                <input type="radio" name="turno" id="turno-tarde" required>
+                <label for="turno-tarde">Tarde</label>
+            </div>
+            <div class="extracurriculares">
+                <label>Atividades Extracurriculares:</label>
+                <div>
+                    <input type="checkbox" name="atividade-extracurricular" id="atividade-informatica">
+                    <label for="atividade-informatica">Informática</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="atividade-extracurricular" id="atividade-musica">
+                    <label for="atividade-musica">Música</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="atividade-extracurricular" id="atividade-balet">
+                    <label for="atividade-balet">Balet</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="atividade-extracurricular" id="atividade-pintura">
+                    <label for="atividade-pintura">Pintura</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="atividade-extracurricular" id="atividade-judo">
+                    <label for="atividade-judo">Judô</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="atividade-extracurricular" id="atividade-futebol">
+                    <label for="atividade-futebol">Futebol</label>
+                </div>
+            </div>
+        </fieldset>
+
+        <div id="buttons">
+            <button type="submit">Enviar Formulário</button>
+            <button type="reset">Limpar Campos</button>
+        </div>
+    </form>
+    <script src="formularioescolar.js"></script>
+</body>
+</html>
