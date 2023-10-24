@@ -1,6 +1,9 @@
 body {
-    background-color: #fff;
+    background-color: white;
     padding-left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #inputs {
