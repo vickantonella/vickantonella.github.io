@@ -14,27 +14,13 @@
     </div>
 
     <script>
-        // Adicione o objeto bankImages com os mapeamentos de código de banco para URLs de imagem
-        const bankImages = {
-            "1": "bancodobrasil.png",
-            "4" : "nordeste.png",
-            "33" : "santander.png",
-            "70" : "brb.png",
-            "77" : "inter.webp",
-            "104": "caixa.jpg",
-            "237" :"bradesco.png",
-            "358" : "midway.jpg",
-            "362" : "cielo.png",
-            "756" : "sicoob.png",
-        };
-
-        // Função para buscar o código do banco a partir da URL
+        // Adquire o código do banco a partir da URL
         function getBankCodeFromURL() {
             const urlParams = new URLSearchParams(window.location.search);
             return urlParams.get("code");
         }
 
-        // Função para buscar informações do banco pelo código
+        // Busca informações do banco pelo código
         async function fetchBankDetails() {
             const bankCode = getBankCodeFromURL();
             if (bankCode) {
@@ -42,11 +28,12 @@
                     const response = await fetch(`https://brasilapi.com.br/api/banks/v1/${bankCode}`);
                     const data = await response.json();
                     const bankInfo = document.getElementById('bank-info');
-                    const image = bankImages[bankCode] ? `<img src="${bankImages[bankCode]}" class="card-img-top" alt="Logo do Banco">` : '';
+                    const image = data.image ? `<img src="${data.image}" class="card-img-top" alt="Logo do Banco">` : '';
                     bankInfo.innerHTML = `
                         <div class="card-body">
                             <h2 class="card-title">${data.name}</h2>
                             <p class="card-text">Código Bancário: ${data.code}</p>
+                            ${image}
                             <p class="card-text">Nome completo: ${data.fullName}</p>
                             <p class="card-text">ISPB: ${data.ispb}</p>
                         </div>
@@ -57,23 +44,6 @@
             }
         }
 
-        // Função para adicionar bancos e URLs de imagens
-        function addBankImage(code, imageUrl) {
-            bankImages[code] = imageUrl;
-        }
-
-        // Adicionar uma imagem a um banco
-        addBankImage("1", "bancodobrasil.png");
-        addBankImage("4", "nordeste.png");
-        addBankImage("33", "santander.png";
-        addBankImage("70", "brb.png");
-        addBankImage("77", "inter.webp");
-        addBankImage("104", "caixa.jpg");
-        addBankImage("237", "bradesco.png");
-        addBankImage("358", "midway.jpg");
-        addBankImage("362", "cielo.png");
-        addBankImage("756", "sicoob.png");
-        
         fetchBankDetails();
     </script>
 </body>
