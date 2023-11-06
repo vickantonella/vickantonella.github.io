@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lista de Bancos</title>
+    <!-- Adicione os links para o Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Lista de Bancos</h1>
+        <ul class="list-group" id="bank-list">
+            <!-- Lista de bancos aqui -->
+        </ul>
+    </div>
+
+    <script>
+        // Função para buscar a lista de bancos da primeira API e criar links para as informações
+        async function fetchBankData() {
+            try {
+                const response = await fetch('https://brasilapi.com.br/api/banks/v1');
+                const data = await response.json();
+                const bankList = document.getElementById('bank-list');
+
+                data.forEach(bank => {
+                    const listItem = document.createElement('li');
+                    listItem.classList.add('list-group-item');
+                    const link = document.createElement('a');
+                    link.textContent = bank.name;
+                    link.href = `bankinformacoes.html?code=${bank.code}`; // Passa o código do banco como parâmetro
+                    listItem.appendChild(link);
+                    bankList.appendChild(listItem);
+                });
+            } catch (error) {
+                console.error('Erro ao buscar os dados dos bancos:', error);
+            }
+        }
+
+        fetchBankData();
+    </script>
+</body>
+</html>
