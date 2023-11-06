@@ -1,0 +1,15 @@
+.card-img-top {
+    max-width: 100px; 
+    max-height: 100px; 
+}
+
+#bank-info.card {
+    background-color: rgb(234, 236, 234); 
+    padding: 20px; 
+    border-radius: 10px; 
+}
+
+body {
+    background-color:#d3ddec;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
